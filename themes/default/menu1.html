@@ -17,9 +17,11 @@
 								<dl class="clearfix">
 									<dt><a href="女装" href=""><?php echo $v1['cat_name'];?></a></dt>
 									<dd>
-										<?php foreach($v1['child'] as $k => $v2):?>
-										<a href=""><?php echo $v2['cat_name'];?></a>
-                                    	<?php endforeach;?>
+										<?php if(!empty($v1['child'])):?> 
+											<?php foreach($v1['child'] as $k => $v2):?>
+												<a href=""><?php echo $v2['cat_name'];?></a>
+	                                    	<?php endforeach;?>
+	                                    <?php endif;?>
 									</dd>
 								</dl>
                                 <?php endforeach;?>                        

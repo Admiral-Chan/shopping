@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/cishop/';
+$config['base_url']	= 'http://www.local.cishop/';
 
 /*
 |--------------------------------------------------------------------------
